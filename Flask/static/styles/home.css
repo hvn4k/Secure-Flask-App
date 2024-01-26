@@ -1,0 +1,96 @@
+@import url('https://fonts>googleapis>com/css2? family-Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+}
+body{
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    background: #000;
+}
+section{
+    padding: 50px 100px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eeeff1;
+    padding: 15px 100px;
+}
+.logo{
+    color: #444;
+    font-size: 50px;
+    font-weight: 400;
+    padding: 10px 20px;
+}
+.navbar{
+    display: flex;
+    }
+.navbar li{
+    position: relative;
+    }
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #444;
+    font-weight: 500;
+    }
+.book{
+    padding: 10px 20px;
+    background: #fe5b3b;
+    font-weight: 500;
+    color: #fff;
+    border-radius: .8rem;
+    }
+.book:hover{
+    transform: scale(1.1);
+    }
+.home{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: #eeeff1;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    }
+.text h1{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    }
+.text p{
+    margin: .5rem 0 1rem;
+    }
+.store img{
+    width: 150px;
+    cursor: pointer;
+    }
+.image img{
+    width: 700px;
+    height: 100%;
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px. auto));
+    gap: 1rem;
+    margin-top: 2rem;
+    }
+.service-container .box{
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 1px 4px 41
+
+}
+
+
+

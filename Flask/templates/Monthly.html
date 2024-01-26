@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1> STATUS OF CARS </h1>
+    {% for STATUS in STATUS %}
+        <div class='Monthly Sales Report'>
+            <p> Name : {{ STATUS['NAME'] }}   &emsp;  CNIC : {{ STATUS['CNIC'] }}  &emsp; CELL : {{ STATUS['MOBILE'] }}&emsp; Rent Date : {{ STATUS['Date'] }}&emsp; Total Bill : {{ STATUS['Bill'] }}</p>
+    
+           
+        </div>
+    {% endfor %}
+    
+    
+    {% with Sales=Sales|last %} 
+        <div class='Sales'>
+			
+            <p>------------------------------------------------------------------------------------------------------------------------------------------<br>Total Sales Report:{{ Sales['Billing'] }}</p>
+           
+        </div>
+	{% endwith %}
+    <form method="post"><input type="submit" value="Delete Previous Status Record""></form>
+    
+    
+{% endblock %}

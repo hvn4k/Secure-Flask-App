@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1> STATUS OF CARS </h1>
+    {% for STATUS in STATUS %}
+        <div class='STATUS'>
+            <p> Name : {{ STATUS['NAME'] }}   &emsp;  CNIC : {{ STATUS['CNIC'] }}  &emsp; CELL : {{ STATUS['MOBILE'] }}&emsp; Rent Date : {{ STATUS['Date'] }}&emsp; Total Bill : {{ STATUS['Bill'] }}</p>
+            <a href="{{ url_for('delete', id=STATUS['CNIC']) }}">Delete</a>
+           
+        </div>
+    {% endfor %}
+    
+   
+    
+{% endblock %}
+
+

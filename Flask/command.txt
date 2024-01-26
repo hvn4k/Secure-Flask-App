@@ -1,0 +1,5 @@
+env\Scripts\activate.bat
+flask run
+
+
+source env/Scripts/activate

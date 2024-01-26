@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %}Billing{% endblock %}</h1>
+    <form method="post">
+       <label for="Manager">N.o of Days</label>
+         &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+       
+        <label for="EMAIL">Pickup Date</label> 
+        <br>
+        <input type="text" name="d"
+               placeholder="Enter Days"
+               value="{{ request.form['d'] }}">
+        </input>
+        
+        &emsp; 
+        <input type="date" name="dd"
+               
+               value="{{ request.form['dd'] }}">
+        </input>
+        
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

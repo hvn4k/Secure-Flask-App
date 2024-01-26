@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1> Customer Database </h1>
+    {% for Information in Information %}
+        <div class='Information'>
+            <p> Name : {{ Information['Name'] }}   &emsp;  Password : {{ Information['Password'] }}  &emsp; CNIC : {{ Information['CNIC'] }}</p>
+            <a href="{{ url_for('deletecustomer', id=Information['CNIC']) }}">Delete</a>
+           
+        </div>
+    {% endfor %}
+    
+   
+    
+{% endblock %}
